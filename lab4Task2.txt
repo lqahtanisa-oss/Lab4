@@ -1,0 +1,24 @@
+17 ?- % c:/users/laria/onedrive/documents/senior year/level 9/ai/labs/lab4task2 compiled 0.00 sec, -1 clauses
+
+|    female(X).
+X = sara ;
+X = nora.
+
+18 ?- male(_).
+true .
+
+19 ?- parent(X,Y), parent(Y,faisal).
+X = ali,
+Y = Muhammad .
+
+20 ?- parent(ahmad,X), female(X).
+X = sara ;
+X = nora;
+false.
+
+
+21 ?- parent(X,ahmad), parent(X,muhammad).
+X = ali.
+
+22 ?- male(khan), parent(X, khan), parent(X, nora).
+X = ahmad.
