@@ -1,0 +1,33 @@
+
+17 ?- house=house.
+true.
+
+18 ?- house=abc.
+false.
+
+19 ?- edge(a,b)=edge(C,b).
+C = a.
+
+20 ?- edge(a,d)=edge(C,B).
+C = a,
+B = d.
+
+21 ?- edge(C,B)=edge(a,d).
+C = a,
+B = d.
+
+22 ?- edge(A,f(g,h))=edge(a,B).
+A = a,
+B = f(g, h).
+
+23 ?- edge(A,A)=edge(b,c).
+false.
+
+24 ?- edge(A,A)=edge(b,b).
+A = b.
+
+25 ?- A=B, B=f.
+A = B, B = f.
+
+26 ?- A=B, B=f, A=e.
+false.
